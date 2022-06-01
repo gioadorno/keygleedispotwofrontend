@@ -3,7 +3,6 @@ import { Image } from './styles'
 import { useState, useEffect, useRef } from 'react';
 import GuestMap from '../GuestMap/GuestMap';
 import { usePlacesWidget } from 'react-google-autocomplete';
-import { GoogleAPI } from './keys';
 import { createSubmitProp } from '../../../actions/submitprop';
 import { useDispatch } from 'react-redux';
 import NavBar from './Homepage_Components/NavBar';
@@ -17,7 +16,7 @@ const Homepage = () => {
     const [activeWeAre, setActiveWeAre] = useState(false);
     const containerRef = useRef(null);
     const { ref } = usePlacesWidget({
-        apiKey: GoogleAPI,
+        apiKey: "AIzaSyBat1MaRl7stoHN62WZ7f9aGYWYOqHnBtU",
         onPlaceSelected: (place) => {
             
         },
