@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import RubikMedium from '../Rubik/Rubik-VariableFont_wght.ttf';
 import { Pagination, PaginationItem } from '@material-ui/lab';
-import ChipInput from 'material-ui-chip-input';
 
 export const Page = styled(PaginationItem)`
     background-color: white !important;

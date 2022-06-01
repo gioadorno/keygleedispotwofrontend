@@ -3,7 +3,6 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { getGeocode, getLatLng } from "use-places-autocomplete";
 import PropertyBox from "./PropertyBox/PropertyBox";
 import { usePlacesWidget } from 'react-google-autocomplete';
-import $ from 'jquery';
 import { useLocation, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { createAddress } from "../../../../actions/address";
@@ -21,16 +20,6 @@ const LeftPanel = ({ topHeader, typeText, placeholder, secondHeader, filterLabel
     const page = query.get('page') || 1;
     const searchQuery = query.get('searchQuery');
 
-    // Filter Function
-$(document).ready(function() {
-    $(".propertyFilter").on("keyup", function() {
-        var value = $(this).val().toLowerCase();
-        $(".propertyBox").filter(function() {
-            $(this).toggle($(this).text()
-            .toLowerCase().indexOf(value) > -1)
-        });
-    });
-});
 
 // const [getMarker, setGetMarker] = useState({
 //     address: '',

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Pagination, PaginationItem } from '@material-ui/lab';
-import ChipInput from 'material-ui-chip-input';
 
 
 const size = {

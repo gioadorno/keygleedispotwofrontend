@@ -1,7 +1,6 @@
 import { InnerLeftPanel, TopDiv, TopHeaderDiv, TopHeader, PropertyDiv, AddressDiv, AddressBox, H2, FilterDiv, FilterInput, FilterLabel} from "./styles"
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PropertyBox from "./PropertyBox/PropertyBox";
-import $ from 'jquery';
 import Paginate from "./Pagination";
 import { getProps } from "../../../../actions/properties";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -16,17 +15,6 @@ const LeftPanel = ({ topHeader, secondHeader, filterLabel, classes }) => {
     const query = useQuery();
     const page = query.get('page') || 1;
     const searchQuery = query.get('searchQuery');
-
-    // Filter Function
-$(document).ready(function() {
-    $(".propertyFilter").on("keyup", function() {
-        var value = $(this).val().toLowerCase();
-        $(".propertyBox").filter(function() {
-            $(this).toggle($(this).text()
-            .toLowerCase().indexOf(value) > -1)
-        });
-    });
-});
 
     return (
         <InnerLeftPanel>

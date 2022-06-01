@@ -1,10 +1,9 @@
-import { Box, Container, Typography, ButtonBase, Button, Modal, LinearProgress, Checkbox, Tooltip } from "@mui/material";
+import { Box, Container, Typography, Button, Checkbox, Tooltip } from "@mui/material";
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import HomeIcon from '@mui/icons-material/Home';
 import HouseIcon from '@mui/icons-material/House';
 import MobileNav from '../MobileNav';
 import OuterBar from '../OuterBar';
-import { DataGrid, GridToolbar, getGridDateOperators } from '@mui/x-data-grid';
+import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import { getAllProperties } from "../../../actions/properties";
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from "react-router-dom";

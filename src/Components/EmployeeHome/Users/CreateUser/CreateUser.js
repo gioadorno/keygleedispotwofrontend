@@ -4,7 +4,7 @@ import MobileNav from "../../MobileNav";
 import { userCreate } from "../../../../actions/login";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import NotAuthorized from '../../NotAuthorized'
 
 const CreateUser = () => {
