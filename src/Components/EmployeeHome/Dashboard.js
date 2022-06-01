@@ -27,7 +27,6 @@ import Login from '../Login/Login';
 import OutboundCalls from './Reports/OutboundCalls';
 import MobileNav from './MobileNav';
 import Events from './EventCalendar/Events';
-import { motion } from "framer-motion"
 // import Chart from './Chart';
 // import Deposits from './Deposits';
 // import Orders from './Orders';

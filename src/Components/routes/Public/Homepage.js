@@ -11,7 +11,6 @@ import backgroundImage from './pexels-pixabay-221540.jpg';
 import TypeWriterEffect from 'react-typewriter-effect';
 import MobileNav from './Homepage_Components/MobileNav'
 import DocumentMeta from 'react-document-meta';
-import { motion } from "framer-motion";
 
 const Homepage = () => {
     const [activeWeDo, setActiveWeDo] = useState(false);
