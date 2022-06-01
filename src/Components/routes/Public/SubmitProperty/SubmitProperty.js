@@ -16,7 +16,6 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Tooltip from '@mui/material/Tooltip';
 import { createSubmitProp } from '../../../../actions/submitprop';
 import { useMemo, forwardRef } from 'react';
-import DocumentMeta from 'react-document-meta';
 import {
     Link as RouterLink,
     Route,
@@ -99,7 +98,6 @@ const SubmitProperty = () => {
         }
 
   return (
-    <DocumentMeta {...meta}>
     <ThemeProvider theme={theme}>
       <Grid container component="main" sx={{ height: '100%' }}>
         <CssBaseline />
@@ -190,7 +188,6 @@ const SubmitProperty = () => {
         <MobileNav />
       </Grid>
     </ThemeProvider>
-    </DocumentMeta>
   )
 }
 

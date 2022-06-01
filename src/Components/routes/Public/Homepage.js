@@ -9,7 +9,6 @@ import NavBar from './Homepage_Components/NavBar';
 import backgroundImage from './pexels-pixabay-221540.jpg';
 import TypeWriterEffect from 'react-typewriter-effect';
 import MobileNav from './Homepage_Components/MobileNav'
-import DocumentMeta from 'react-document-meta';
 
 const Homepage = () => {
     const [activeWeDo, setActiveWeDo] = useState(false);
@@ -51,7 +50,6 @@ const Homepage = () => {
     }
 
     return (
-        <DocumentMeta {...meta}>
         <Box sx={{ width: { xs: '100%', sm: '100%' }, height: { xs: '90%', sm: '70%' } }} >
             <Box ref={containerRef} sx={{ height: { xs: 550, sm: 600, md: 700, xl: 900 }, position: { xs: 'relative' }, width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center',}}>
                 <NavBar />
@@ -110,7 +108,6 @@ const Homepage = () => {
             </Box>
             <MobileNav />
         </Box>
-        </DocumentMeta>
     )
 }
 

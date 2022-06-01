@@ -10,7 +10,6 @@ import { createApplication } from '../../../../actions/applications';
 import { IMaskInput } from 'react-imask';
 import PropTypes from 'prop-types';
 import FileBase from 'react-file-base64';
-import DocumentMeta from 'react-document-meta';
 
 const TextMaskCustom = forwardRef(function TextMaskCustom(props, ref) {
 
@@ -78,7 +77,6 @@ const Careers = () => {
         }
 
   return (
-      <DocumentMeta {...meta}>
     <Box sx={{ display: 'flex', position: 'relative', height: '100vh', width: '100%', flexDirection: 'column', bgcolor: '#002e62', alignItems: 'center' }}>
         <NavBar />
         {currentJob === null && (
@@ -377,7 +375,6 @@ const Careers = () => {
         <MobileNav />
         <img src={background} style={{ width: '100%', height: '100%', position: 'absolute', top: 0, right: 0, left: 0 }} />
     </Box>
-    </DocumentMeta>
   )
 }
 
