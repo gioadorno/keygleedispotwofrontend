@@ -1,15 +1,10 @@
-import { Box, AppBar, Grid, Container, ButtonGroup, Button, Avatar, Tooltip, Menu, MenuItem, ListItemIcon, Typography, IconButton  } from "@mui/material";
+import { Box, AppBar,  Container, ButtonGroup, Button, Avatar, Tooltip, Menu, MenuItem, ListItemIcon, Typography, IconButton  } from "@mui/material";
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import AssignmentIcon from '@mui/icons-material/Assignment';
-import GroupsIcon from '@mui/icons-material/Groups';
-import { useState, useEffect, useMemo } from 'react';
+import { useState } from 'react';
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import PropTypes from 'prop-types';
-import HomeIcon from '@mui/icons-material/Home';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
-import TypeWriterEffect from 'react-typewriter-effect';
 
 
 const NavBar = () => {

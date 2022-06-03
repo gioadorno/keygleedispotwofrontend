@@ -26,13 +26,8 @@ const BuyerDashboard = () => {
     const navigate = useNavigate();
     const query = useQuery();
     const page = query.get('page') || 1; // Getting page info
-    const market = query.get('market');
     const [markets, setMarkets] = useState(initialArray);
-    const searchMarkets = async () => {
-            dispatch(getActiveMarkets(markets));
-            navigate(`/dashboard/search?market=${markets}`)
-  };
-  
+
     useEffect(() => {
         dispatch(getAllActiveProperties())
     },[]);

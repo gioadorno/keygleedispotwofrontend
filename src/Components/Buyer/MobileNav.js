@@ -1,20 +1,11 @@
-import { AppBar, Box, Toolbar, IconButton, ButtonGroup, Button, Typography, Container, Avatar, Tooltip, Menu, MenuItem, BottomNavigation, BottomNavigationAction } from '@mui/material';
-import { forwardRef, useMemo, useState } from 'react';
+import { Box, IconButton, Avatar, Tooltip, Menu, MenuItem, BottomNavigation, BottomNavigationAction } from '@mui/material';
+import { useState } from 'react';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import { ListItemIcon } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { updateEmployee } from '../../actions/employees';
-import PropTypes from 'prop-types';
 import HomeIcon from '@mui/icons-material/Home';
 import MapIcon from '@mui/icons-material/Map';
-import {
-    Link as RouterLink,
-    Route,
-    Routes,
-    MemoryRouter,
-    useLocation,
-} from 'react-router-dom';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 
@@ -23,17 +14,12 @@ const MobileNav = () => {
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
     const navigate = useNavigate();
     const dispatch = useDispatch();
-const [anchorElNav, setAnchorElNav] = useState(null);
 const [anchorElUser, setAnchorElUser] = useState(null);
-const [ status, setStatus ] = useState({ status: 'InActive' });
+// const [ status, setStatus ] = useState({ status: 'InActive' });
 const [value, setValue] = useState(0);
 
 const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
-};
-
-const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
 };
 
 const handleCloseUserMenu = () => {

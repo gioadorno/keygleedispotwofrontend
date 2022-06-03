@@ -1,12 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Outlet, Route, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import CreateUser from './Components/EmployeeHome/Users/CreateUser/CreateUser'
 import GuestLogin from "./Components/routes/GuestLogin/GuestLogin";
 import BuyerDashboard from "./Components/Buyer/BuyerDashboard";
 import Homepage from "./Components/routes/Public/Homepage";
 import Careers from "./Components/routes/Public/Careers/Careers";  
 import CreateAccount from "./Components/routes/CreateBuyer/CreateAccount";
-import { useEffect} from "react";
 import Dashboard from "./Components/EmployeeHome/Dashboard";
 import Acquisitions from './Components/EmployeeHome/Acquisitions/Acquisitions';
 import PropertyDetails from "./Components/EmployeeHome/Acquisitions/Property/PropertyDetails/PropertyDetails";
@@ -30,7 +29,6 @@ import HR from './Components/EmployeeHome/HR/HR';
 import PostJob from './Components/EmployeeHome/HR/PostJob/PostJob';
 import Applications from './Components/EmployeeHome/HR/Applications/Applications';
 import ITDashboard from './Components/EmployeeHome/IT/ITDashboard';
-import MicNotWorking from './Components/EmployeeHome/IT/Index/MicNotWorking';
 import Support from './Components/routes/Support/Support';
 import ResetPassword from './Components/routes/GuestLogin/ResetPassword';
 import ResetEmployeePassword from './Components/Login/ResetEmployeePassword';

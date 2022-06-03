@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.82bad2c8.chunk.css",
-    "main.js": "/static/js/main.b721fa8b.chunk.js",
-    "main.js.map": "/static/js/main.b721fa8b.chunk.js.map",
+    "main.js": "/static/js/main.413f6cad.chunk.js",
+    "main.js.map": "/static/js/main.413f6cad.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.33b1aaa6.js",
     "runtime-main.js.map": "/static/js/runtime-main.33b1aaa6.js.map",
     "static/css/2.7d441899.chunk.css": "/static/css/2.7d441899.chunk.css",
-    "static/js/2.0c68877f.chunk.js": "/static/js/2.0c68877f.chunk.js",
-    "static/js/2.0c68877f.chunk.js.map": "/static/js/2.0c68877f.chunk.js.map",
+    "static/js/2.da05bf71.chunk.js": "/static/js/2.da05bf71.chunk.js",
+    "static/js/2.da05bf71.chunk.js.map": "/static/js/2.da05bf71.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.7d441899.chunk.css.map": "/static/css/2.7d441899.chunk.css.map",
     "static/css/main.82bad2c8.chunk.css.map": "/static/css/main.82bad2c8.chunk.css.map",
-    "static/js/2.0c68877f.chunk.js.LICENSE.txt": "/static/js/2.0c68877f.chunk.js.LICENSE.txt",
+    "static/js/2.da05bf71.chunk.js.LICENSE.txt": "/static/js/2.da05bf71.chunk.js.LICENSE.txt",
     "static/media/12. General Vocab.73b93f62.pdf": "/static/media/12. General Vocab.73b93f62.pdf",
     "static/media/4. Foundation of Love Graphic.01bc3351.pdf": "/static/media/4. Foundation of Love Graphic.01bc3351.pdf",
     "static/media/Account.79e59ad0.png": "/static/media/Account.79e59ad0.png",
@@ -51,8 +51,8 @@
   "entrypoints": [
     "static/js/runtime-main.33b1aaa6.js",
     "static/css/2.7d441899.chunk.css",
-    "static/js/2.0c68877f.chunk.js",
+    "static/js/2.da05bf71.chunk.js",
     "static/css/main.82bad2c8.chunk.css",
-    "static/js/main.b721fa8b.chunk.js"
+    "static/js/main.413f6cad.chunk.js"
   ]
 }
