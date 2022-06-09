@@ -647,7 +647,7 @@ const AcqOptions = ({ markets }) => {
                                 </Box>
                                 <FormControl style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
                                     <FormLabel style={{ marginBottom: '1em', color: '#607d8b', fontWeight: '550' }}>Upload Property Photo</FormLabel>
-                                    <FileBase64 name="propPhoto" required={true} type='file' onDone={(fileInfo) => setPropertyData({ ...propertyData, propPhoto: fileInfo.base64, fileName: fileInfo.name })} onChange={fileHandler} multiple={false}  />
+                                    <FileBase64 name="propPhoto" required={true} type='file' onDone={(fileInfo) => setPropertyData({ ...propertyData, propPhoto: fileInfo.base64.replace('heic', 'jpg'), fileName: fileInfo.name })} onChange={fileHandler} multiple={false}  />
                                 </FormControl>
                         </Grid>
                         <Grid item xs={12}>

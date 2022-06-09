@@ -231,7 +231,7 @@ const Inventory = () => {
           },
           {
             field: 'dispo',
-            headerName: `Diposition`,
+            headerName: `Disposition`,
             width: 200,
             editable: false,
             sortable: true,
@@ -251,7 +251,7 @@ const Inventory = () => {
           },
           {
             field: 'dispo2',
-            headerName: `Diposition`,
+            headerName: `Disposition`,
             width: 200,
             editable: false,
             sortable: true,

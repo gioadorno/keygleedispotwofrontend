@@ -115,7 +115,7 @@ import { getUsers, updateEmployee } from '../../actions/employees';
               >
                 <MenuIcon />
               </IconButton>
-              <Typography sx={{ display: {xs: 'none', sm: 'block'}, mr: 1}} component='body1' variant='body2'>
+              <Typography sx={{ display: {xs: 'none', sm: 'block'}, mr: 1}} variant='body2'>
                   Users Online:
                 </Typography>
                 <AvatarGroup sx={{ mr: -15, display: { xs: 'none', sm: 'inherit' }, p: 1}} max={5}>
