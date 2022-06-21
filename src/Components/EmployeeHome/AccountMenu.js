@@ -58,7 +58,7 @@ export default function AccountMenu() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
-  const [ openHandbook, openHandbook ] = useState(false);
+  const [ openHandbook, setOpenHandbook ] = useState(false);
   const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
