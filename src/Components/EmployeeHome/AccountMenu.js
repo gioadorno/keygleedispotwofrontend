@@ -178,7 +178,7 @@ export default function AccountMenu() {
         </MenuItem> */}
         <Divider />
         {/* Stats */}
-        <MenuItem>
+        <MenuItem onClick={() => setOpenHandbook(true)}>
           <ListItemIcon>
             <MenuBookIcon fontSize="small" />
           </ListItemIcon>
