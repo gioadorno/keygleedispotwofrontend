@@ -125,7 +125,7 @@ export const mainListItems = (
         <ListItemLink style={{ width: '100%' }} placement='right' title='Dashboard' primary="Dashboard" to='/employeedashboard' icon={<DashboardIcon />} />
         {/* <ListItemLink style={{ width: '100%' }} placement='right' title='Map' primary="Map" to='/map' icon={<AddLocationAltIcon />} /> */}
         <ListItemLink style={{ width: '100%' }} placement='right' title='Properties' primary="Properties" to='/acquisitions?page=1' icon={<MapsHomeWorkIcon />} />
-        {/* <ListItemLink style={{ width: '100%' }} placement='right' title='Inventory' primary="Inventory" to='/inventory' icon={<ListAltIcon />} /> */}
+        <ListItemLink style={{ width: '100%' }} placement='right' title='Inventory' primary="Inventory" to='/inventory' icon={<ListAltIcon />} />
         <ListItemLink style={{ width: '100%' }} placement='right' title='Calendar/Events' primary="Calendar/Events" to='/eventcalendar' icon={<DateRangeIcon />} />
   </React.Fragment>
 );

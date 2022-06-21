@@ -21,6 +21,8 @@ import { useDispatch } from 'react-redux';
 import decode from 'jwt-decode';
 import { updateEmployee } from '../../actions/employees';
 import Login from '../Login/Login';
+import handbook from './Handbook.pdf';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   '& .MuiBadge-badge': {
@@ -172,9 +174,11 @@ export default function AccountMenu() {
         {/* Stats */}
         <MenuItem>
           <ListItemIcon>
-            <AutoGraphIcon fontSize="small" />
+            <MenuBookIcon fontSize="small" />
           </ListItemIcon>
-          Coming Soon
+            <object data={handbook} type='application/pdf' width='80%' height='100%'>
+                  <Typography sx={{ color: 'white' }}>Employee Handbook</Typography>
+            </object>
         </MenuItem>
         {/* <MenuItem>
           <ListItemIcon>
