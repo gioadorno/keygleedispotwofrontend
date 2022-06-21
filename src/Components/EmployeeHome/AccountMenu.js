@@ -177,7 +177,7 @@ export default function AccountMenu() {
             <MenuBookIcon fontSize="small" />
           </ListItemIcon>
             <object data={handbook} type='application/pdf' width='80%' height='100%'>
-                  <Typography sx={{ color: 'white' }}>Employee Handbook</Typography>
+                  <Typography>Employee Handbook</Typography>
             </object>
         </MenuItem>
         {/* <MenuItem>
