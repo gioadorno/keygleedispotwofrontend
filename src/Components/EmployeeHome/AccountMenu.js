@@ -57,6 +57,7 @@ export default function AccountMenu() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
+  const [ openHandbook, openHandbook ] = useState(false);
   const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -164,6 +165,11 @@ export default function AccountMenu() {
         transformOrigin={{ horizontal: 'right', vertical: 'top' }}
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
+        <Modal sx={{ display: 'flex', alignItems: 'center', width: '100%', height: '100%', justifyContent: 'center' }} onClose={() => setOpenHandbook(false)} open={openHandbook}>
+          <object data={handbook} type='application/pdf' width='80%' height='100%'>
+                <Typography>Employee Handbook</Typography>
+          </object>
+        </Modal>
         <MenuItem onClick={openProfile}>
           <Avatar /> Profile
         </MenuItem>
@@ -176,9 +182,7 @@ export default function AccountMenu() {
           <ListItemIcon>
             <MenuBookIcon fontSize="small" />
           </ListItemIcon>
-            <object data={handbook} type='application/pdf' width='80%' height='100%'>
-                  <Typography>Employee Handbook</Typography>
-            </object>
+          Employee Handbook
         </MenuItem>
         {/* <MenuItem>
           <ListItemIcon>
