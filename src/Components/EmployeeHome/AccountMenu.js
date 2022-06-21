@@ -112,6 +112,11 @@ export default function AccountMenu() {
 
   return (
     <React.Fragment>
+        <Modal sx={{ display: 'flex', alignItems: 'center', width: '100%', height: '100%', justifyContent: 'center' }} onClose={() => setOpenHandbook(false)} open={openHandbook}>
+          <object data={handbook} type='application/pdf' width='80%' height='100%'>
+                <Typography>Employee Handbook</Typography>
+          </object>
+        </Modal>
       <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
         <Tooltip title="Account settings">
           <IconButton
@@ -169,11 +174,6 @@ export default function AccountMenu() {
         transformOrigin={{ horizontal: 'right', vertical: 'top' }}
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
-        <Modal sx={{ display: 'flex', alignItems: 'center', width: '100%', height: '100%', justifyContent: 'center' }} onClose={() => setOpenHandbook(false)} open={openHandbook}>
-          <object data={handbook} type='application/pdf' width='80%' height='100%'>
-                <Typography>Employee Handbook</Typography>
-          </object>
-        </Modal>
         <MenuItem onClick={openProfile}>
           <Avatar /> Profile
         </MenuItem>
