@@ -58,9 +58,9 @@ export default function AccountMenu() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
-  const [ openHandbook, setOpenHandbook ] = useState(false);
   const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
   const [anchorEl, setAnchorEl] = useState(null);
+  const [ openHandbook, setOpenHandbook ] = useState(false);
   const open = Boolean(anchorEl);
   const handleClick = (e) => {
     setAnchorEl(e.currentTarget);
@@ -68,6 +68,9 @@ export default function AccountMenu() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+  const openBook = () => {
+    setOpenHandbook(true)
+  }
   const openProfile = () => {
     navigate(`/profile/${user.result._id}`)
   }
@@ -179,7 +182,7 @@ export default function AccountMenu() {
         </MenuItem> */}
         <Divider />
         {/* Stats */}
-        <MenuItem onClick={() => setOpenHandbook(true)}>
+        <MenuItem onClick={openBook}>
           <ListItemIcon>
             <MenuBookIcon fontSize="small" />
           </ListItemIcon>
