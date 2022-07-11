@@ -101,10 +101,10 @@ return (
 
         
   return (
-    <AppBar sx={{ position: { sm: 'initial' }, bottom: { xs: '0em' }, display: { xs: 'none', sm: 'inline-flex' }, backgroundColor: { xs: "#00000094", sm: '#ffffffa6' }, width: { xs: '100%', sm: '60%' }, zIndex: '50', top: { xs: null, sm: '0em' }, alignItems: 'center', justifyContent: 'center', boxShadow: '4', m: 2, borderRadius: '1em'  }}>
+    <AppBar sx={{ position: { sm: 'initial' }, bottom: { xs: '0em' }, display: { xs: 'none', sm: 'inline-flex' }, backgroundColor: { xs: "#00000094", sm: '#ffffffa6' }, width: { xs: '100%', sm: '80%', lg: '60%' }, zIndex: '50', top: { xs: null, sm: '0em' }, alignItems: 'center', justifyContent: 'center', boxShadow: '4', m: 2, borderRadius: '1em'  }}>
             <Container maxWidth='2xl'>
                 <Toolbar disableGutters>
-                <Box sx={{ flexGrow: 1, alignItems: 'center', display: 'flex', justifyContent: 'flex-start' }}>
+                <Box sx={{ flexGrow: 1, alignItems: 'center', display: 'flex', justifyContent: 'flex-start', whiteSpace: 'nowrap' }}>
                     <ButtonGroup >
                         <ButtonLink title='Home' to='/' icon={ <HomeIcon /> } />
                         <ButtonLink title='Submit a Property' to='/submitproperty' icon={ <AssignmentIcon /> } />
@@ -125,7 +125,7 @@ return (
                             <img style={{ width: '3em', height: '3em', marginRight: '16em' }} src={logo} /> 
                         </Box>
                     </Box>
-            <Box sx={{ flexGrow: 0 }}>
+            <Box>
             <ButtonLink title='Support' to='/support' icon={ <ContactSupportIcon /> } />
                 <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
