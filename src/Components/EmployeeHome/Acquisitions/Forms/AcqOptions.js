@@ -1,4 +1,4 @@
-import { Grid, Paper, Box, Typography, Toolbar, TextField, FormControl, MenuItem, Select, FormControlLabel, Radio, RadioGroup, Input, FormLabel, CardMedia, Button, Snackbar, IconButton, Modal, CircularProgress } from "@mui/material";
+import { Grid, Paper, Box, Typography, Toolbar, TextField, FormControl, MenuItem, Select, FormControlLabel, Radio, RadioGroup, Input, FormLabel, CardMedia, Button, Snackbar, IconButton, Modal, CircularProgress, Switch, Stack } from "@mui/material";
 import { Autocomplete, InputAdornment } from "@mui/material";
 import OuterBar from '../../OuterBar';
 import { getGeocode, getLatLng } from "use-places-autocomplete";
@@ -141,7 +141,8 @@ const AcqOptions = ({ markets }) => {
             photoFile: '',
             fileType: '',
             PropertyPhoto: '',
-            tags: ''
+            tags: '',
+            emailBlast: false
         });
     const dispatch = useDispatch();
     useEffect(() => {
@@ -178,6 +179,8 @@ const AcqOptions = ({ markets }) => {
         componentRestrictions: { country: "us" },
     },
     });
+
+    console.log(propertyData.emailBlast)
 
     const handleChange = (e) => {
         setPropertyData({ ...propertyData, [e.target.name]: e.target.value })
@@ -639,6 +642,16 @@ const AcqOptions = ({ markets }) => {
                                         {markets.denver}
                                     </MenuItem>
                                     </Select>
+                                </FormControl>
+                        </Grid>
+                        <Grid item xs={12}>
+                                <FormControl style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
+                                    <FormLabel>Blast property right away?</FormLabel>
+                                    <Stack direction='row' spacing={1} alignItems='center'>
+                                    <Typography>No</Typography>
+                                    <Switch color='primary' checked={propertyData.emailBlast} onChange={e => setPropertyData({ ...propertyData, emailBlast: e.target.checked })} name="emailBlast" />
+                                    <Typography>Yes</Typography>
+                                    </Stack>
                                 </FormControl>
                         </Grid>
                         <Grid item xs={12}>
