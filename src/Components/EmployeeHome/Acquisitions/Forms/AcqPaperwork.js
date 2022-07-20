@@ -649,7 +649,7 @@ const AcqPaperwork = ({ markets }) => {
                         </Grid>
                         <Grid item xs={12}>
                                 <FormControl style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
-                                    <FormLabel>Blast property right away?</FormLabel>
+                                    <FormLabel sx={{ color: '#607d8b', fontWeight: '550' }}>Blast property right away?</FormLabel>
                                     <Stack direction='row' spacing={1} alignItems='center'>
                                     <Typography>No</Typography>
                                     <Switch color='primary' checked={propertyData.emailBlast} onChange={e => setPropertyData({ ...propertyData, emailBlast: e.target.checked })} name="emailBlast" />
