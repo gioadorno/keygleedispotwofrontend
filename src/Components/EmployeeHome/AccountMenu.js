@@ -70,7 +70,7 @@ export default function AccountMenu() {
   };
   const openBook = () => {
     setOpenHandbook(true)
-  }
+  };
   const openProfile = () => {
     navigate(`/profile/${user.result._id}`)
   }

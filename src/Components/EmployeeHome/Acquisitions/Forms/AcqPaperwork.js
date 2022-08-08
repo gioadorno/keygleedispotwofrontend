@@ -146,7 +146,8 @@ const AcqPaperwork = ({ markets }) => {
             fileType: '',
             PropertyPhoto: '',
             tags: '',
-            emailBlast: false
+            emailBlast: false,
+            investorLift: false
         });
     const dispatch = useDispatch();
     useEffect(() => {
@@ -653,6 +654,16 @@ const AcqPaperwork = ({ markets }) => {
                                     <Stack direction='row' spacing={1} alignItems='center'>
                                     <Typography>No</Typography>
                                     <Switch color='primary' checked={propertyData.emailBlast} onChange={e => setPropertyData({ ...propertyData, emailBlast: e.target.checked })} name="emailBlast" />
+                                    <Typography>Yes</Typography>
+                                    </Stack>
+                                </FormControl>
+                        </Grid>
+                        <Grid item xs={12}>
+                                <FormControl style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
+                                    <FormLabel sx={{ color: '#607d8b', fontWeight: '550' }}>Blast property on Investor Lift?</FormLabel>
+                                    <Stack direction='row' spacing={1} alignItems='center'>
+                                    <Typography>No</Typography>
+                                    <Switch color='primary' checked={propertyData.emailBlast} onChange={e => setPropertyData({ ...propertyData, investorLift: e.target.checked })} name="emailBlast" />
                                     <Typography>Yes</Typography>
                                     </Stack>
                                 </FormControl>

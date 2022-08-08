@@ -8,7 +8,7 @@ import { useDispatch } from 'react-redux';
 import NavBar from './Homepage_Components/NavBar';
 import backgroundImage from './pexels-pixabay-221540.jpg';
 import TypeWriterEffect from 'react-typewriter-effect';
-import MobileNav from './Homepage_Components/MobileNav'
+import MobileNav from './Homepage_Components/MobileNav';
 
 const Homepage = () => {
     const [activeWeDo, setActiveWeDo] = useState(false);
